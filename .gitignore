@@ -1,0 +1,38 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Unity cache and generated files
+[Mm]emoryCaptures/
+Recordings/
+ExportedObj/
+.consulo/
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity asset metadata that should remain tracked is *.meta.
+!/[Aa]ssets/**/*.meta
+!/[Pp]ackages/**/*.meta
+!/[Pp]roject[Ss]ettings/**/*.meta
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
