@@ -26,6 +26,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.lscache
 
 # Unity asset metadata that should remain tracked is *.meta.
 !/[Aa]ssets/**/*.meta
