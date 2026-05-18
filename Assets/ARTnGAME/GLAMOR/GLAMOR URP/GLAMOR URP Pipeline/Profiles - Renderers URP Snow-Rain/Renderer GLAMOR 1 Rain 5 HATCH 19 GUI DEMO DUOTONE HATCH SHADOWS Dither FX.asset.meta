@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b639291f6ab67b2418adac8a4a2f10b9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282274
+  packageName: GLAMOR Advanced Image Effects
+  packageVersion: 2.0.4
+  assetPath: Assets/ARTnGAME/GLAMOR/GLAMOR URP/GLAMOR URP Pipeline/Profiles - Renderers
+    URP Snow-Rain/Renderer GLAMOR 1 Rain 5 HATCH 19 GUI DEMO DUOTONE HATCH SHADOWS
+    Dither FX.asset
+  uploadId: 892430
