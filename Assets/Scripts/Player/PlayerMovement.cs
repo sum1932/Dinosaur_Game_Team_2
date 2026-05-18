@@ -136,6 +136,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         InteractPressed?.Invoke();
-        Debug.Log("Interact key pressed. Interaction behavior is not implemented yet.");
+        Debug.Log("상호작용 입력 감지, 이벤트 발생");
     }
 }
