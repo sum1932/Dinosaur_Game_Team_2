@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Collider))]
 public class NPCDialogueInteractable : MonoBehaviour
@@ -17,6 +18,7 @@ public class NPCDialogueInteractable : MonoBehaviour
 
     private PlayerMovement nearbyPlayer;
     private bool warnedMissingDialogueUI;
+    private int lastInteractFrame = -1;
 
     private void Reset()
     {
@@ -39,6 +41,20 @@ public class NPCDialogueInteractable : MonoBehaviour
     {
         UnsubscribeFromPlayer();
         SetPromptVisible(false);
+    }
+
+    private void Update()
+    {
+        if (nearbyPlayer == null)
+        {
+            return;
+        }
+
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard != null && keyboard.eKey.wasPressedThisFrame)
+        {
+            HandleInteractPressed();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -70,6 +86,12 @@ public class NPCDialogueInteractable : MonoBehaviour
 
     private void HandleInteractPressed()
     {
+        if (lastInteractFrame == Time.frameCount)
+        {
+            return;
+        }
+
+        lastInteractFrame = Time.frameCount;
         ResolveDialogueUI();
 
         if (dialogueUI == null)
