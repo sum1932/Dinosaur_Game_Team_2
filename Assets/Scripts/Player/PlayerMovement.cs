@@ -18,6 +18,11 @@ public class PlayerMovement : MonoBehaviour
     public event Action InteractPressed;
 
     private CharacterController characterController;
+
+    public void SetCamera(Transform cam)
+    {
+        cameraTransform = cam;
+    }
     private Vector3 verticalVelocity;
 
     private void Awake()
