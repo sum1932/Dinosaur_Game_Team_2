@@ -45,6 +45,7 @@ public class BillboardToCamera : MonoBehaviour
     {
         if (targetCamera != null)
         {
+            FindAnyObjectByType<Camera>();
             return targetCamera;
         }
 
